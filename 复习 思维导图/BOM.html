@@ -1,0 +1,124 @@
+<html>
+<head>
+<META http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+<meta content="text/css" http-equiv="Content-Style-Type">
+<title>BOM</title>
+</head>
+<body>
+<h1 align="center" class="root">
+<a name="7l4op4r69dvq529usk9vs5mjrb">BOM</a>
+</h1>
+<div align="center" class="globalOverview">
+<img src="BOM_files/images/BOM.jpg"></div>
+<div class="notesContainer">
+<p>BOM：浏览器对象模型；</p>
+<p></p>
+<p>BOM是浏览器提供的相关方法；</p>
+<p></p>
+<p></p>
+</div>
+<h2 class="topic">
+<a name="2vvdvcivdukrmp5q1kn6s4s8v1">窗口</a>
+</h2>
+<h3 class="topic">
+<a name="6okvnqt8bd6q18m77fpq6akogb">&nbsp;window.open(url,name,specs)</a>
+</h3>
+<h3 class="topic">
+<a name="6560kvqb7e2b1tuhrvkjkvoqdd">&nbsp;&nbsp;name:打开方式，框架name</a>
+</h3>
+<div class="notesContainer">
+<p>打开方式：</p>
+<p></p>
+<p>_blank:新窗口打开；</p>
+<p></p>
+<p>_self本窗口打开；</p>
+<p></p>
+<p>_top:最外层框架</p>
+<p>_parent：父级框架</p>
+</div>
+<h3 class="topic">
+<a name="294r2p6la99qjfui6eab58hr2q">&nbsp;&nbsp;specs:规格，只有在新窗口打开有效</a>
+</h3>
+<div class="notesContainer">
+<p>只有在新窗口打开有效	,'width=100px,height=100px',属性=值，多个属性间用逗号分隔</p>
+</div>
+<h3 class="topic">
+<a name="29tv5assbt0u8krh85ju6ln4la">&nbsp;window.close();</a>
+</h3>
+<div class="notesContainer">
+<p>var opener = null;</p>
+<p>			//打开新窗口</p>
+<p>			btn.onclick = function(){</p>
+<p>				//记录新打开窗口的window</p>
+<p>				opener = open();</p>
+<p>			}</p>
+<p>			//关闭新窗口</p>
+<p>			btn1.onclick = function(){</p>
+<p>				//通过记录找到新窗口的window关闭</p>
+<p>				opener.close();</p>
+<p>			}</p>
+<p>			//关闭当前窗口</p>
+</div>
+<h3 class="topic">
+<a name="26nepvh2gie5mj5aqnd3upji5m">&nbsp;&nbsp;火狐下只能关闭open打开的新窗口</a>
+</h3>
+<h3 class="topic">
+<a name="4j9q4tb0mi3vfk8gvtt390tp91">&nbsp;浏览器信息对象</a>
+</h3>
+<h3 class="topic">
+<a name="55krpto564f7e7hcf4ldcult0a">&nbsp;&nbsp;navigator</a>
+</h3>
+<h3 class="topic">
+<a name="44i13efli8bi5qdi6ll3hke4gd">&nbsp;&nbsp;&nbsp;navigator.userAgent:什么浏览器Chrome，Firefox，版本号</a>
+</h3>
+<h3 class="topic">
+<a name="0ck265mb05sjrj6ntfb9hvuvps">&nbsp;window.onresize</a>
+</h3>
+<h3 class="topic">
+<a name="3slmphlk4cst8rpj3io0j56t5s">&nbsp;&nbsp;窗口尺寸改变时触发</a>
+</h3>
+<h3 class="topic">
+<a name="2c6n1rkr45vpb6o1q1on8ur9ft">&nbsp;window.onscroll</a>
+</h3>
+<h3 class="topic">
+<a name="1j4mtqgpjv6mob9cklukh7fkkh">&nbsp;&nbsp;滚动条滚动时触发的</a>
+</h3>
+<h2 class="topic">
+<a name="2rctdaocq9g4q8ikofsmuhj6g1">location</a>
+</h2>
+<div class="notesContainer">
+<p>地址栏对象：下面的对象信息可以获取也可以设置；</p>
+</div>
+<h3 class="topic">
+<a name="5uu7r82btpv44198ha4va5aij1">&nbsp;location.href</a>
+</h3>
+<h3 class="topic">
+<a name="2d7fvf1s9uuem2uipj1utd1c3u">&nbsp;location.search</a>
+</h3>
+<h3 class="topic">
+<a name="1nvkvl74h2l4u0m2aiih532ek2">&nbsp;&nbsp;？和#之间的内容</a>
+</h3>
+<h3 class="topic">
+<a name="06agb7i5d5k6bvfg27ag4vqi4u">&nbsp;location.hash</a>
+</h3>
+<h3 class="topic">
+<a name="4n6cugfdr1dsbq1vqkq7oovt83">&nbsp;&nbsp;#后面的</a>
+</h3>
+<h3 class="topic">
+<a name="3dtp8e8m7i2l8gsjls1thlndj2">&nbsp;除了hash以外都会刷新页面</a>
+</h3>
+<h3 class="topic">
+<a name="08kkg06ipa6itfqpa13755i0l5">&nbsp;window.onhashchange</a>
+</h3>
+<h3 class="topic">
+<a name="293ldgs5anemp7dm4181eor7kp">&nbsp;&nbsp;hash改变时候触发</a>
+</h3>
+<h2 class="topic">
+<a name="4k6da0i99v5fut2du9q8gf332d">window.scrollTo(x,y)</a>
+</h2>
+<h2 class="topic">
+<a name="4efqcmr5tprcc86b158epepej1">scrollHeight/scrollWidth</a>
+</h2>
+</body>
+</html>
