@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<title></title>
+<style>
+	#div{
+	width:100px;
+	height: 100px;
+	/*display: none;*/
+	/*opacity: 0;*/
+	position: absolute;
+	left:0;
+	}
+	div{background: red;}
+	.blue{background: blueviolet;}	
+</style>
+</head>
+<body>
+	<input type="button" name="" id="" value="点击" />
+	<div id="div"></div>
+</body>
+<!--
+	备注：[]可以不写 
+-->
+<!--
+	show([speed],[easing],[fn])  显示效果
+	speed:字符串("slow","normal", or "fast")或动画时长的毫秒数值(如：1000)
+	easing:(Optional) 用来指定切换效果，默认是"swing"，可用参数"linear"
+	[fn]回调函数
+-->
+<!--
+	hide([speed],[easing],[fn])  消失效果 用法类似show
+-->
+<!--
+	toggle()显示或隐藏
+	toggle([speed], [easing ], [fn] )
+-->
+<!--
+	slideDown([speed],[easing],[fn])展开  slideUp([speed],[easing],[fn])合上
+	都是通过高度的变化
+-->
+<!--
+	slideToggle([speed],[easing],[fn])
+	都是通过高度的变化,展开或者合上
+-->
+<!--
+	fadeIn([speed],[easing],[fn]) 淡入
+	fadeOut([speed],[easing],[fn]) 淡出
+	fadeTaggle()
+	通过操作opacity实现
+-->
+<!--
+	fadeTo([speed],[easing],[fn]) 调整不透明度
+-->
+<!--
+	animate()用于创建自定义动画的函数。
+	·animate(params,[speed],[easing],[fn])
+	params:{css属性集合}
+	·animate(params,options)
+	options{动画的额外选项。如：speed - 设置动画的速度,easing - 规定要使用的 easing 函数,callback - 规定动画完成之后要执行的函数,step - 规定动画的每一步完成之后要执行的函数,queue - 布尔值。指示是否在效果队列中放置动画。如果为 false，则动画将立即开始,specialEasing - 来自 styles 参数的一个或多个 CSS 属性的映射，以及它们的对应 easing 函数
+}
+-->
+</html>
+<script src="jquery-3.1.1.min (1).js" type="text/javascript" charset="utf-8"></script>
+<script src="jquery.easing.1.3.js" type="text/javascript" charset="utf-8"></script>
+<script type="text/javascript">
+	//-------------------show
+	/*$(':button').click(function(){
+		//$('#div').show()
+		$('#div').show(500,'linear',function(){
+			$('#div').animate({
+				opacity:0
+			},500)
+		})
+	})*/
+	//--------------------toggle
+	/*$(':button').click(function(){
+		$('#div').toggle(1000,'easeInCirc');
+	})*/
+	/*$(':button').click(function(){
+		$('#div').slideToggle(1000,'easeInOutCirc');
+	})*/
+	//----------------fade
+	/*$(':button').click(function(){
+		$('#div').fadeOut(1000,'easeOutQuad');
+	})*/
+	/*$(':button').click(function(){
+		$('#div').fadeTo(1000, 0.66,'easeOutSine');
+	})*/
+	//---------animate
+	/*$(':button').click(function(){
+		$('#div').animate({
+			left:300,
+			top:200
+		},2000,'easeOutElastic');
+	})*/
+	
+</script>
